@@ -1,0 +1,49 @@
+/* Navigation Styles */
+.nav-menu {
+    background-color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    transition: all 0.3s ease;
+    background-color: #DAA520; /* Dourado */
+}
+
+.nav-menu a:hover {
+    background-color: #FFD700; /* Amarelo mais claro */
+}
+
+.nav-menu a.active {
+    background-color: #FFD700; /* Amarelo mais claro */
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .nav-menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nav-menu {
+        padding: 1rem;
+    }
+}
